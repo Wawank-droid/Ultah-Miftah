@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #ee9ca7, #bb8a7b);
+}
+
+
+/* ============= HALAMAN ADMIN ============= */
+.contcom {
+  position: fixed;
+  border-radius: 2rem;
+  max-width: 25rem;
+  height: auto;
+  max-height: 70vh;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-shadow: 0 0 20px rgba(0,0,0,0.4);
+  padding: 0; /* padding dipindah ke dalam */
+  overflow-y: auto; /* ← scroll aktif */
+}
+
+/* Judul sticky */
+.contcom h2 {
+  position: sticky;
+  top: 0;
+  background: white;
+  padding: 1.5rem;
+  z-index: 10;
+  border-radius: 2rem 2rem 0 0; 
+}
+
+/* Isi list */
+.list {
+  padding: 1.5rem;
+}
+
+#adminList li {
+  background: #eee;
+  padding: 1rem;
+  max-width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
